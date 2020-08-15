@@ -58,6 +58,26 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 * We can use routers to chunk out the code for more reuseability and readability
 
+1. The core features of Node.js and Express and why they are useful.
+
+- Core feature of Node.js is using JS outside of the browser, Express is utilizing the server module to function as a backend, can utilize middleware and routing.
+
+1. Understand and explain the use of Middleware?
+
+- explained above
+
+1. The basic principles of the REST architectural style.
+
+- Everything is a resource, each which have unique url, can have multiple representations, happens via HTTP, and is managed by HTTP methods.
+
+1. Understand and explain the use of Express Routers.
+
+- Express Routing allows for modularity, it allows you to split up your front end from your api from your backend, each with its own middleware functions.
+
+1. Describe tooling used to manually test the correctness of an API.
+
+- Tools like POSTMAN or INSOMNIA can be used to test your api. They themselves are an api that allows you to test your endpoints.
+
 ## Minimum Viable Product
 
 - [ ] Configure an _npm script_ named _"server"_ that will execute your code using _nodemon_. Make _nodemon_ be a development time dependency only, it shouldn't be deployed to production.
