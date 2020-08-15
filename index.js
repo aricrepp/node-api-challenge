@@ -14,13 +14,19 @@ Go code!
 */
 
 const express = require('express');
+const helmet = require('helmet');
+const cors = require('cors');
 const actionRouter = require('./data/helpers/actionRouter');
 const projectRouter = require('./data/helpers/projectRouter');
+const welcomeRouter = require('./data/welcome/welcome-router');
 
 const server = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 server.use(express.json());
+server.use(helmet());
+server.use(cors());
+server.use('/', welcomeRouter);
 server.use('/action', actionRouter);
 server.use('/project', projectRouter);
 
